@@ -1,0 +1,183 @@
+/*!
+
+ =========================================================
+ * Paper Dashboard - v1.1.2
+ =========================================================
+
+ * Product Page: http://www.creative-tim.com/product/paper-dashboard
+ * Copyright 2017 Creative Tim (http://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE.md)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+@import "paper/variables";
+@import "paper/mixins";
+@import "paper/typography";
+// Core CSS
+@import "paper/misc";
+@import "paper/sidebar-and-main-panel";
+@import "paper/buttons";
+@import "paper/inputs";
+@import "paper/alerts";
+@import "paper/tables";
+@import "paper/checkbox-radio";
+@import "paper/navbars";
+@import "paper/footers";
+// Fancy Stuff
+@import "paper/dropdown";
+@import "paper/cards";
+@import "paper/chartist";
+@import "paper/responsive";
+
+$online-color: rgb(66, 185, 66);
+$offline-color: #adacac;
+
+.border-gray {
+  border: solid 1px gray;
+}
+
+.no-border {
+  border: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.mg-lf-xs {
+  margin-left: 10px;
+}
+
+.mg-lf-sm {
+  margin-left: 16px;
+}
+
+.mg-lf-xxs {
+  margin-left: 5px;
+}
+
+.mg-rg-xxs {
+  margin-right: 5px;
+}
+
+.mg-rg-sm {
+  margin-right: 16px;
+}
+
+.mg-rg-sm-negative {
+  margin-right: -5px;
+}
+
+.mg-bt-sm {
+  margin-bottom: 10px !important;
+}
+
+.mg-bt-md {
+  margin-bottom: 25px !important;
+}
+
+.mg-tp-md {
+  margin-top: 25px !important;
+}
+
+.mg-tp-sm {
+  margin-top: 10px !important;
+}
+
+.mg-tp-lg {
+  margin-top: 50px !important;
+}
+
+.mg-tp-xxs-negative {
+  margin-top: -5px;
+}
+
+.pd-all-md {
+  padding: 20px;
+}
+
+.pd-tp-none {
+  padding-top: 0;
+}
+
+.el-center {
+  margin: 0 auto;
+}
+
+.icon-big {
+  font-size: 3em;
+  min-height: 64px;
+}
+
+.icon-xbig {
+  font-size: 5em;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.ss-inline-spinner {
+  animation: spinnerInlineRotate 1s linear infinite;
+  border: solid 3px transparent;
+  border-top: solid 3px #4db6ac;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.ss-inline-block-spinner {
+  animation: spinnerInlineRotate 1s linear infinite;
+  border: solid 1px transparent;
+  border-top: solid 1px #4db6ac;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+@keyframes spinnerInlineRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a.back-link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 50%;
+  text-indent: -999px;
+  color: transparent;
+  overflow: hidden;
+  width: .5em;
+  height: .5em;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+
+  &.online {
+    background: $online-color;
+  }
+
+  &.offline {
+    background: $offline-color;
+  }
+}
+
+.online-color {
+  color: $online-color;
+}
+
+.offline-color {
+  color: $offline-color;
+}
